@@ -10,6 +10,7 @@ project(hello_library)
 add_library(hello_library SHARED 
     src/Hello.cpp
 )
+# 添加一个别名，无其他含义
 add_library(hello::library ALIAS hello_library)
 
 target_include_directories(hello_library
